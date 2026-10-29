@@ -1,0 +1,432 @@
+{
+  "tipo": "Pyro5 real, três processos",
+  "porta_isolada": 58559,
+  "retornos": {
+    "PeerA": 0,
+    "PeerB": 0,
+    "PeerC": 0
+  },
+  "eventos": {
+    "PeerA": [
+      {
+        "seq": 1,
+        "peer": "PeerA",
+        "evento": "CHAVE_GERADA",
+        "relogio": 0,
+        "instante_ns": 1793224900926199901,
+        "algoritmo": "RSA-2048/SHA256"
+      },
+      {
+        "seq": 2,
+        "peer": "PeerA",
+        "evento": "CHAVE_RECEBIDA",
+        "relogio": 0,
+        "instante_ns": 1793224900999645127,
+        "remetente": "PeerC"
+      },
+      {
+        "seq": 3,
+        "peer": "PeerA",
+        "evento": "CHAVE_ENVIADA",
+        "relogio": 0,
+        "instante_ns": 1793224901438461382,
+        "destinatario": "PeerB"
+      },
+      {
+        "seq": 4,
+        "peer": "PeerA",
+        "evento": "CHAVE_RECEBIDA",
+        "relogio": 0,
+        "instante_ns": 1793224901441667741,
+        "remetente": "PeerB"
+      },
+      {
+        "seq": 5,
+        "peer": "PeerA",
+        "evento": "CHAVE_ENVIADA",
+        "relogio": 0,
+        "instante_ns": 1793224901442183931,
+        "destinatario": "PeerC"
+      },
+      {
+        "seq": 6,
+        "peer": "PeerA",
+        "evento": "PRONTO",
+        "relogio": 0,
+        "instante_ns": 1793224901442319845,
+        "peers": [
+          "PeerB",
+          "PeerC"
+        ]
+      },
+      {
+        "seq": 7,
+        "peer": "PeerA",
+        "evento": "RECEBIDA",
+        "relogio": 2,
+        "instante_ns": 1793224901492854239,
+        "mensagem": {
+          "remetente": "PeerC",
+          "destinatario": "PeerA",
+          "tipo": "PEDIDO",
+          "recurso": "R2",
+          "timestamp": 1,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "assinatura": "VALIDA"
+      },
+      {
+        "seq": 8,
+        "peer": "PeerA",
+        "evento": "ENVIADA",
+        "relogio": 3,
+        "instante_ns": 1793224901497871285,
+        "mensagem": {
+          "remetente": "PeerA",
+          "destinatario": "PeerC",
+          "tipo": "OK",
+          "recurso": "R2",
+          "timestamp": 3,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "assinatura": "ASSINADA"
+      },
+      {
+        "seq": 9,
+        "peer": "PeerA",
+        "evento": "ENTREGUE",
+        "relogio": 3,
+        "instante_ns": 1793224901501256748,
+        "mensagem": {
+          "remetente": "PeerA",
+          "destinatario": "PeerC",
+          "tipo": "OK",
+          "recurso": "R2",
+          "timestamp": 3,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "verificacao_destino": "VALIDA"
+      }
+    ],
+    "PeerB": [
+      {
+        "seq": 1,
+        "peer": "PeerB",
+        "evento": "CHAVE_GERADA",
+        "relogio": 0,
+        "instante_ns": 1793224900933580882,
+        "algoritmo": "RSA-2048/SHA256"
+      },
+      {
+        "seq": 2,
+        "peer": "PeerB",
+        "evento": "CHAVE_RECEBIDA",
+        "relogio": 0,
+        "instante_ns": 1793224901001703598,
+        "remetente": "PeerC"
+      },
+      {
+        "seq": 3,
+        "peer": "PeerB",
+        "evento": "CHAVE_RECEBIDA",
+        "relogio": 0,
+        "instante_ns": 1793224901437817376,
+        "remetente": "PeerA"
+      },
+      {
+        "seq": 4,
+        "peer": "PeerB",
+        "evento": "CHAVE_ENVIADA",
+        "relogio": 0,
+        "instante_ns": 1793224901442184161,
+        "destinatario": "PeerA"
+      },
+      {
+        "seq": 5,
+        "peer": "PeerB",
+        "evento": "CHAVE_ENVIADA",
+        "relogio": 0,
+        "instante_ns": 1793224901444785222,
+        "destinatario": "PeerC"
+      },
+      {
+        "seq": 6,
+        "peer": "PeerB",
+        "evento": "PRONTO",
+        "relogio": 0,
+        "instante_ns": 1793224901444891308,
+        "peers": [
+          "PeerA",
+          "PeerC"
+        ]
+      },
+      {
+        "seq": 7,
+        "peer": "PeerB",
+        "evento": "RECEBIDA",
+        "relogio": 2,
+        "instante_ns": 1793224901493326333,
+        "mensagem": {
+          "remetente": "PeerC",
+          "destinatario": "PeerB",
+          "tipo": "PEDIDO",
+          "recurso": "R2",
+          "timestamp": 1,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "assinatura": "VALIDA"
+      },
+      {
+        "seq": 8,
+        "peer": "PeerB",
+        "evento": "ENVIADA",
+        "relogio": 3,
+        "instante_ns": 1793224901497957488,
+        "mensagem": {
+          "remetente": "PeerB",
+          "destinatario": "PeerC",
+          "tipo": "OK",
+          "recurso": "R2",
+          "timestamp": 3,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "assinatura": "ASSINADA"
+      },
+      {
+        "seq": 9,
+        "peer": "PeerB",
+        "evento": "ENTREGUE",
+        "relogio": 3,
+        "instante_ns": 1793224901501023229,
+        "mensagem": {
+          "remetente": "PeerB",
+          "destinatario": "PeerC",
+          "tipo": "OK",
+          "recurso": "R2",
+          "timestamp": 3,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "verificacao_destino": "VALIDA"
+      }
+    ],
+    "PeerC": [
+      {
+        "seq": 1,
+        "peer": "PeerC",
+        "evento": "CHAVE_GERADA",
+        "relogio": 0,
+        "instante_ns": 1793224900995409252,
+        "algoritmo": "RSA-2048/SHA256"
+      },
+      {
+        "seq": 2,
+        "peer": "PeerC",
+        "evento": "CHAVE_ENVIADA",
+        "relogio": 0,
+        "instante_ns": 1793224901000038028,
+        "destinatario": "PeerA"
+      },
+      {
+        "seq": 3,
+        "peer": "PeerC",
+        "evento": "CHAVE_ENVIADA",
+        "relogio": 0,
+        "instante_ns": 1793224901001974895,
+        "destinatario": "PeerB"
+      },
+      {
+        "seq": 4,
+        "peer": "PeerC",
+        "evento": "CHAVE_RECEBIDA",
+        "relogio": 0,
+        "instante_ns": 1793224901441630869,
+        "remetente": "PeerA"
+      },
+      {
+        "seq": 5,
+        "peer": "PeerC",
+        "evento": "CHAVE_RECEBIDA",
+        "relogio": 0,
+        "instante_ns": 1793224901444320688,
+        "remetente": "PeerB"
+      },
+      {
+        "seq": 6,
+        "peer": "PeerC",
+        "evento": "PRONTO",
+        "relogio": 0,
+        "instante_ns": 1793224901453756693,
+        "peers": [
+          "PeerA",
+          "PeerB"
+        ]
+      },
+      {
+        "seq": 7,
+        "peer": "PeerC",
+        "evento": "PEDIU",
+        "relogio": 1,
+        "instante_ns": 1793224901487753554,
+        "recurso": "R2",
+        "pedido_id": "PeerC:R2:1",
+        "pedido_timestamp": 1
+      },
+      {
+        "seq": 8,
+        "peer": "PeerC",
+        "evento": "ENVIADA",
+        "relogio": 1,
+        "instante_ns": 1793224901488505869,
+        "mensagem": {
+          "remetente": "PeerC",
+          "destinatario": "PeerA",
+          "tipo": "PEDIDO",
+          "recurso": "R2",
+          "timestamp": 1,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "assinatura": "ASSINADA"
+      },
+      {
+        "seq": 9,
+        "peer": "PeerC",
+        "evento": "ENVIADA",
+        "relogio": 1,
+        "instante_ns": 1793224901489270359,
+        "mensagem": {
+          "remetente": "PeerC",
+          "destinatario": "PeerB",
+          "tipo": "PEDIDO",
+          "recurso": "R2",
+          "timestamp": 1,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "assinatura": "ASSINADA"
+      },
+      {
+        "seq": 10,
+        "peer": "PeerC",
+        "evento": "ENTREGUE",
+        "relogio": 1,
+        "instante_ns": 1793224901498333539,
+        "mensagem": {
+          "remetente": "PeerC",
+          "destinatario": "PeerA",
+          "tipo": "PEDIDO",
+          "recurso": "R2",
+          "timestamp": 1,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "verificacao_destino": "VALIDA"
+      },
+      {
+        "seq": 11,
+        "peer": "PeerC",
+        "evento": "ENTREGUE",
+        "relogio": 1,
+        "instante_ns": 1793224901498677287,
+        "mensagem": {
+          "remetente": "PeerC",
+          "destinatario": "PeerB",
+          "tipo": "PEDIDO",
+          "recurso": "R2",
+          "timestamp": 1,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "verificacao_destino": "VALIDA"
+      },
+      {
+        "seq": 12,
+        "peer": "PeerC",
+        "evento": "RECEBIDA",
+        "relogio": 4,
+        "instante_ns": 1793224901500568357,
+        "mensagem": {
+          "remetente": "PeerB",
+          "destinatario": "PeerC",
+          "tipo": "OK",
+          "recurso": "R2",
+          "timestamp": 3,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "assinatura": "VALIDA"
+      },
+      {
+        "seq": 13,
+        "peer": "PeerC",
+        "evento": "PERMISSAO_RECEBIDA",
+        "relogio": 4,
+        "instante_ns": 1793224901500655938,
+        "recurso": "R2",
+        "remetente": "PeerB",
+        "tipo": "OK",
+        "quantidade": 1,
+        "pedido_id": "PeerC:R2:1"
+      },
+      {
+        "seq": 14,
+        "peer": "PeerC",
+        "evento": "RECEBIDA",
+        "relogio": 5,
+        "instante_ns": 1793224901500840884,
+        "mensagem": {
+          "remetente": "PeerA",
+          "destinatario": "PeerC",
+          "tipo": "OK",
+          "recurso": "R2",
+          "timestamp": 3,
+          "pedido_timestamp": 1,
+          "pedido_id": "PeerC:R2:1"
+        },
+        "assinatura": "VALIDA"
+      },
+      {
+        "seq": 15,
+        "peer": "PeerC",
+        "evento": "PERMISSAO_RECEBIDA",
+        "relogio": 5,
+        "instante_ns": 1793224901500902339,
+        "recurso": "R2",
+        "remetente": "PeerA",
+        "tipo": "OK",
+        "quantidade": 2,
+        "pedido_id": "PeerC:R2:1"
+      },
+      {
+        "seq": 16,
+        "peer": "PeerC",
+        "evento": "ENTROU_SC",
+        "relogio": 5,
+        "instante_ns": 1793224901500933536,
+        "recurso": "R2",
+        "pedido_id": "PeerC:R2:1",
+        "pedido_timestamp": 1,
+        "permissoes": [
+          "PeerA",
+          "PeerB"
+        ]
+      },
+      {
+        "seq": 17,
+        "peer": "PeerC",
+        "evento": "SAIU_SC",
+        "relogio": 6,
+        "instante_ns": 1793224901517943664,
+        "recurso": "R2",
+        "pedido_id": "PeerC:R2:1",
+        "notificar": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+test_criacao_concorrente_do_servico_de_nomes (test_integracao.InicioConcorrenteTest.test_criacao_concorrente_do_servico_de_nomes) ... ok
+test_01_inicializacao_e_acesso_sem_concorrencia (test_integracao.IntegracaoTest.test_01_inicializacao_e_acesso_sem_concorrencia) ... ok
+test_02_dois_pedidos_enquanto_terceiro_ocupa (test_integracao.IntegracaoTest.test_02_dois_pedidos_enquanto_terceiro_ocupa) ... ok
+test_03_recursos_simultaneos_e_politica_anti_impasse (test_integracao.IntegracaoTest.test_03_recursos_simultaneos_e_politica_anti_impasse) ... ok
+test_04_assinatura_adulterada_rejeitada_pelo_destinatario (test_integracao.IntegracaoTest.test_04_assinatura_adulterada_rejeitada_pelo_destinatario) ... ok
+test_05_pedidos_concorrentes_repetidos_sem_inanicao (test_integracao.IntegracaoTest.test_05_pedidos_concorrentes_repetidos_sem_inanicao) ... ok
+test_06_menu_estado_log_e_ola (test_integracao.IntegracaoTest.test_06_menu_estado_log_e_ola) ... ok
+test_assinatura_cobre_todos_os_campos (test_protocolo.ProtocoloTest.test_assinatura_cobre_todos_os_campos) ... ok
+test_empate_de_timestamp_eh_desfeito_pelo_id (test_protocolo.ProtocoloTest.test_empate_de_timestamp_eh_desfeito_pelo_id) ... ok
+test_formato_invalido_nao_derruba_handler (test_protocolo.ProtocoloTest.test_formato_invalido_nao_derruba_handler) ... ok
+test_invalida_eh_descartada_sem_mudar_relogio_estado_ou_fila (test_protocolo.ProtocoloTest.test_invalida_eh_descartada_sem_mudar_relogio_estado_ou_fila) ... ok
+test_liberacao_retorna_enquanto_callback_esta_bloqueado (test_protocolo.ProtocoloTest.test_liberacao_retorna_enquanto_callback_esta_bloqueado) ... ok
+test_nao_pode_adquirir_r2_enquanto_ainda_espera_r1 (test_protocolo.ProtocoloTest.test_nao_pode_adquirir_r2_enquanto_ainda_espera_r1) ... ok
+test_pedir_antes_das_chaves_e_liberar_sem_ocupar_sao_recusados (test_protocolo.ProtocoloTest.test_pedir_antes_das_chaves_e_liberar_sem_ocupar_sao_recusados) ... ok
+test_permissao_antiga_nao_entra_em_novo_pedido (test_protocolo.ProtocoloTest.test_permissao_antiga_nao_entra_em_novo_pedido) ... ok
+test_recursos_independentes_e_ordem_contra_impasse (test_protocolo.ProtocoloTest.test_recursos_independentes_e_ordem_contra_impasse) ... ok
+test_relogio_na_recepcao (test_protocolo.ProtocoloTest.test_relogio_na_recepcao) ... ok
+test_substituicao_de_chave_publica_recusada (test_protocolo.ProtocoloTest.test_substituicao_de_chave_publica_recusada) ... ok
+test_timestamp_tem_prioridade_sobre_id (test_protocolo.ProtocoloTest.test_timestamp_tem_prioridade_sobre_id) ... ok
+test_uma_notificacao_nao_basta_e_duplicata_nao_conta (test_protocolo.ProtocoloTest.test_uma_notificacao_nao_basta_e_duplicata_nao_conta) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 6.031s
+
+OK
